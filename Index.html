@@ -31,17 +31,19 @@
         import { initializeApp } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-app.js";
         import { getDatabase, ref, push, onValue, remove, update } from "https://www.gstatic.com/firebasejs/10.7.0/firebase-database.js";
 
-        const firebaseConfig = {
-            apiKey: "AIzaSyBvEPUyI1HffkQBfBUAtw8_sLnoK_HyU24",
-            authDomain: "my-project-8aef9.firebaseapp.com",
-            databaseURL: "https://my-project-8aef9-default-rtdb.firebaseio.com",
-            projectId: "my-project-8aef9",
-            storageBucket: "my-project-8aef9.appspot.com",
-            messagingSenderId: "202472136261",
-            appId: "1:202472136261:web:08ebcdb1c54edfb23c0d2c"
-        };
-
-        const app = initializeApp(firebaseConfig);
+ // Your web app's Firebase configuration
+ const firebaseConfig = {
+              apiKey: "AIzaSyBMJsVpnbOwVOiVNbTZScZdet9qlGigDL0",
+              authDomain: "conexion-8ec0d.firebaseapp.com",
+              databaseURL: "https://conexion-8ec0d-default-rtdb.firebaseio.com",
+              projectId: "conexion-8ec0d",
+              storageBucket: "conexion-8ec0d.appspot.com",
+              messagingSenderId: "679910299749",
+              appId: "1:679910299749:web:9800b464879628b4850e8c"
+            };
+          
+            // Initialize Firebase
+            const app = initializeApp(firebaseConfig);
         const database = getDatabase(app);
 
         // Funciones de Firebase CRUD
@@ -106,8 +108,6 @@
 
                 const btnEliminar = document.createElement('button');
                 btnEliminar.textContent = 'Eliminar';
-                btnEliminar.style.marginRight = '20px';
-                btnEliminar.style.marginBottom = '10px';
                 btnEliminar.addEventListener('click', () => eliminarRegistro(childSnapshot.key));
 
                 li.appendChild(btnEditar);
