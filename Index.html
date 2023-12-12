@@ -106,6 +106,8 @@
 
                 const btnEliminar = document.createElement('button');
                 btnEliminar.textContent = 'Eliminar';
+                btnEliminar.style.marginRight = '20px';
+                btnEliminar.style.marginBottom = '10px';
                 btnEliminar.addEventListener('click', () => eliminarRegistro(childSnapshot.key));
 
                 li.appendChild(btnEditar);
