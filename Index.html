@@ -82,7 +82,7 @@
             const nuevaDireccion = prompt('Editar Direccion:', Direccion);
 
             if (nuevoNcedula !== null && nuevoNombre !== null && nuevoApellido !== null && nuevaDireccion !== null) {
-                update(ref(database, servitibRegistros/${key}), {
+                update(ref(database, `servitibRegistros/${key}`), {
                     Ncedula: nuevoNcedula,
                     Nombre: nuevoNombre,
                     Apellido: nuevoApellido,
@@ -95,7 +95,7 @@
             const confirmacion = confirm('¿Seguro que desea eliminar este registro?');
 
             if (confirmacion) {
-                remove(ref(database, servitibRegistros/${key}));
+                remove(ref(database, `servitibRegistros/${key}`));
             }
         };
 
@@ -106,7 +106,7 @@
             snapshot.forEach((childSnapshot) => {
                 const registro = childSnapshot.val();
                 const li = document.createElement('li');
-                li.textContent = Ncedula: ${registro.Ncedula}, Nombre: ${registro.Nombre}, Apellido: ${registro.Apellido}, Direccion: ${registro.Direccion};
+                li.textContent = `Ncedula: ${registro.Ncedula}, Nombre: ${registro.Nombre}, Apellido: ${registro.Apellido}, Direccion: ${registro.Direccion}`;
 
                 const btnEditar = document.createElement('button');
                 btnEditar.textContent = 'Editar';
