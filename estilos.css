@@ -1,0 +1,45 @@
+body {
+  background-image: url('https://previews.123rf.com/images/mvelishchuk/mvelishchuk2105/mvelishchuk210500916/169496327-tecnolog%C3%ADa-de-hardware-de-reparaci%C3%B3n-de-computadoras-servicio-t%C3%A9cnico-de-pc-electr%C3%B3nico-del.jpg');
+  background-size: cover; 
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  font-family: arial;
+  font-size: 16px;
+  background-color: white;
+  border-radius: 20px;
+  /* Espacio entre el borde del contenedor y el contenido */
+}
+h2 {
+  text-align: center;
+}
+
+.container div {
+  text-align: center;
+}
+
+input {
+  width: 250px;
+  padding: 5px;
+}
+
+.button {
+  display: inline-block;
+  padding: 10px 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f0f0f0;
+  cursor: pointer;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: #e0e0e0;
+}
+.form-group{
+  margin-bottom: 20px;
+}
